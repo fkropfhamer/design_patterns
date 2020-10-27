@@ -1,0 +1,36 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage[table]{xcolor}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+
+% begin define color
+\definecolor{background}{HTML}{EEEEEE}
+% end define color
+
+% Create a new environment for breaking code listings across pages.
+\newenvironment{longlisting}{\captionsetup{type=listing}}{}
+
+\title{Design Patterns}
+\author{}
+
+\begin{document}
+\maketitle
+
+\section{Solid Principles}
+\subsection{Single-responsibility principle}
+\subsection{Open-closed principle}
+\subsection{Liskov substitution principle}
+\subsection{Interface segregation principle}
+\subsection{Dependency inversion principle}
+
+\inputminted[bgcolor=background, breaklines]{typescript}{../src/index.ts}
+
+\end{document} 
